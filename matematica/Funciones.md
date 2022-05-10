@@ -327,3 +327,119 @@ a = 2
 ```
  para averiguar la asintota se evalua el valor de x con numeros muy altos para poder ignorar el resto de la ecuacion y simplificar las x.
 ```
+
+
+## Funciones definidas por varias leyes
+
+Ej: un auto recorre una trayectoria en un determinado tiempo, con variaciones en los tiempos internos
+
+        f1(t) 0<= t <=a
+f(t) =  f1(t) a<= t <=a
+
+<!-- completar, faltaste -->
+
+## Funcion valor absoluto
+
+*f(x)* = |x| = x >= 0
+              -x <= 0
+
+## Paridad de una función
+
+### Funcion par
+Son funciones geométricas espejadas en el eje y
+
+### Funcion impar
+Son funciones geométricas simétricas respecto al origen de coordenadas (0,0)
+
+
+
+# Funcion trigonométrica
+
+Son periódicas
+
+si T > 0 : *f(x+t)* = *f(x)*
+
+## Función seno sen(x) [o sin(x)]
+
+Dom*f* = *R*
+Im*f* = [-1,1]
+impar: sen(-x) = -sen(x)
+período T = 2[pi]
+
+```
+(grafico es una onda constante /\/\/\/\/\/\/\/\)
+```
+
+## Función tangente tg(x) = sen(x)/cos(x)
+
+Dom*f* = *R* - {x/cos(x) = 0}
+Im*f* = R
+<!-- impar: sen(-x) = -sen(x)
+período T = 2[pi]
+
+```
+(grafico es una onda constante /\/\/\/\/\/\/\/\)
+``` -->
+
+# Algebra de las funciones
+
+
+
+# Composición de funciones
+
+*f*: A -> B y *g* : B -> C =======> g : A -> C
+
+*g* ° *f* = *g*[f(x)] donde x pertenece a A
+
+Ejemplos: 
+
+1) f(x) = x2 ; g(x) = 2x -1
+
+g ° f = g[f(x)] = g[x^2] = `2x^2 - 1`
+f ° g = f[g(x)] = f[2x - 1] = `(2x - 1)^2`
+
+## Propiedades
+
+- Anticonmutatividad: g ° f !== f ° g
+- Asociatividad
+<!-- falta definir -->
+
+
+# Límite
+
+* x(sub0) = valor específico de x.
+
+* Interesa analizar la función (y=f(x)) cuando la variable independiente (x) tiende a un cierto valor (x )
+                           0
+
+* Se representa: *lim*     *f*(x)
+                    x->x
+                        0
+
+Donde x(sub0) puede ser:
+- finito: 0, 4, -18, etc
+- infinito: [+inf], [-inf]
+
+Ejemplo:
+```
+
+      4x + 1                  1
+lim ----------  = *f*(x) = - ---
+x->0  2x - 2                  2
+```
+
+## Continuidad
+
+Inituivamente una funcion es continua si se puede realizar su gráfica sin levantar el lapiz
+
+formalmente *f* es continua en x(sub0) si:
+- existe el valor numérico de *f* en x = x(sub0)
+- existe el límite de la funcion en x = x(sub0) y es finito
+- el valor del límite de *f* en el punto coincide con el valor numérico de la función en ese punto
+
+
+# Graficos de funciones
+
+- usar: 
+
+```wolframalpha.com```
