@@ -1,0 +1,5 @@
+nasm -f win64 ConsoleMessage64.asm -o prueba.obj
+ld.exe prueba.obj -o prueba.exe -L C:\Users\Enzo\Desktop\uca-2022\arquitectura\practico\x86_64-pc-mingw32\lib -lkernel32
+
+nasm -f win64 MessageBox64.asm -o asd.obj
+ld.exe asd.obj -o prueba2.exe -L C:\Users\Enzo\Desktop\uca-2022\arquitectura\practico\x86_64-pc-mingw32\lib -lkernel32 -luser32
