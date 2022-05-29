@@ -115,3 +115,100 @@ q(x) = x^5
 # Raices
 
 # Factoreo
+
+
+## Descomposición factorial de polinomios
+
+- Aplicar el Teorema de Gauss (para encontrar posibles raíces)
+
+El coeficiente independiente debe ser distinto de 0, y el de a[subn]x^n = 1
+
+Ej: 
+
+P(x) = x^4 - 5x^3 - 10x^2 + 20x + 24
+
+a[sub0] = 24
+a[subn] = 1
+n = 4 ====> grado del polinomio e indica la cantidad de raíces a encontrar.
+
+Son posibles raíces los valores de x:
+
++-24, +-12, +-8,+-6,+-4,+-3,+-2,+-1
+
+- Aplicar el Teorema del Resto (para evaluar las posibles raíces)
+
+Si a un polinomio se lo divide por el binomio del tipo (x-x[subi]);
+
+7504 / 12 = 625 % 4
+
+12* 625 + 4 = 7504;
+
+
+resulta que P(x[subi]) = resto de la division
+
+utlizar las raices como valor de x en el polinomio.
+
+P(x) = x^4 - 5x^3 - 10x^2 + 20x + 24
+P(1) = 1 -5 -10+ 20+24 = 30 =========> NO ES RAIZ
+P(-1) = 1 + 5 - 10 -20+24 = 0 =======> `ES RAIZ`
+P(2) = 16 - 40-40+40+24 = 0 =========> `ES RAIZ`
+P(-2) = 16 + 40-40-40+24 = 0 ========> `ES RAIZ`
+
+
+Usamos entonces la posible raiz:
+
+P(x) / (x + 1) = P(x) donde (-1) cambia signo - a +
+
+
+- Realizar las divisiones aplicando el teorema de Rufini.
+
+
+       | x^4 x^3 x^2  x   x^0
+       -----------------------
+       | 1   -5  -10  20   24
+    -1 |     -1    6   4  -24
+       | 1   -6   -4  24    0
+
+Entonces ===> `P(x) = (x^3 - 6x^2 - 4x +24). (x+1)`
+
+Aplico Rufini sobre el resultado con otra raíz
+<!-- NO ESTA COMPLETA -->
+       | x^4 x^3 x^2  x   x^0
+       -----------------------
+       | 1   -6  -10  20   24
+     2 |     -2    6   4  -24
+       | 1   -4   -4  24    0
+
+Cuando llego a grado 2 aplico formula de ecuacion cuadratica
+
+Obtengo x1 = 6 x2 = -2
+
+P(x) = (x+1). (x-2). (x+2) . (x+6)
+
+## Recordemos
+
+- Diferencia de cuadrados
+```
+(x^2 - a^2) = (x+a) . (x-a)
+```
+
+- Binomio al cuadrado = trinomio cuadrado perfecto
+```
+(x+-a)^2 = x^2 +- 2ax + a^2
+```
+
+- Binomio al cubo = cuatrinomio cuadrado perfecto
+```
+(x+-a)^3 = x^3 +- 3ax + 3a^2x +- a^3
+```
+
+- Caso de polinomios bicuadráticos
+P(x) = ax^4 + bx^2 + c
+
+`TRUCO======>` reemplazar x^2 por OOTRA LETRA (y) y se tiene un polinomio cuadratico:
+
+P(y) = ay^2 + by + c
+
+entonces  aplico (-b +- sqrt(b2-4ac))/2a
+
+Puede ser necesario extraer factor comun de todo el ponimomio para aplicar el teorema de Gauss
